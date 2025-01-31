@@ -1,4 +1,5 @@
 package praticeJava;
+import com.tkr.program.*;
 public class JavaDemo {
 
 		public void display() {
@@ -16,7 +17,14 @@ public class JavaDemo {
 		}
 		public static void main(String[] args) {
 			JavaDemo obj=new JavaDemo();
+			AcessModPublic ob=new AcessModPublic();
+			System.out.println("accesseed from another class and another package: "+ob.a);
 			obj.display();
+			
+			//creating to check if protected is accesed 
+			
+//			AcessProtected objj=new AcessProtected();
+//			System.out.println(objj.prot);
 		}
 	
 
