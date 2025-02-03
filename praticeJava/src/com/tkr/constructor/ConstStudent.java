@@ -6,7 +6,7 @@ public class ConstStudent {
 	private String name;
 	private String branch;
 	
-	//creating constructer parameter
+	//creating parameterized constructer 
 	
 	public ConstStudent(int rollNo, String name, String branch) {
 		super();
