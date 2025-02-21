@@ -24,6 +24,9 @@ public class EmployeeSortAge {
 		epl.add(new EmployeeDetails(7409,"cherry",21));
 		epl.add(new EmployeeDetails(7410,"chintu",22));
 		
+		
+		List<Integer> ag = epl.stream().filter(a->a.age>24).map(a->a.age).collect(Collectors.toList());	
+		System.out.println(ag);
 
 		
 		List<String> as = epl.stream().filter(n->n.name.startsWith("c")).sorted(Comparator.comparing(n->n.name)).map(n->n.name).collect(Collectors.toList());
@@ -33,3 +36,5 @@ public class EmployeeSortAge {
 		System.out.println(as1);
 	}
 }
+
+
